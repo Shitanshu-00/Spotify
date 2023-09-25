@@ -1,19 +1,16 @@
-import { View, Text, Button } from "react-native";
+import { View, Text, Button, Image } from "react-native";
 import React from "react";
 import { styles } from "../Components/styles";
+import { SIZES } from "../Constants/Theme";
 
 const Home = (props) => {
   console.log("Home");
-  return (
-    <View
-      style={styles.container}>
-      <Text>Home</Text>
-      <Button
-        title="Player"
-        onPress={() => props.navigation.navigate("Player")}
-      />
+  return <View style={styles.container}>
+    <View style={styles.rowView}>
+      <Text style={{fontSize:SIZES.xl}}>Good Evening</Text>
+      {/* <Image source={} /> */}
     </View>
-  );
+  </View>;
 };
 
 export default Home;
